@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>EPTI Insurance</title>
+        <title>Bootstrap Case</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="SHORTCUT ICON" href="images/favicon.png" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/style.css">
@@ -28,7 +27,7 @@
                         <img src="images/logo.png"  alt="#">
                     </a>
                     <ul class="nav navbar-nav navbar-right" id="nav-moblie-default">
-                        <li><a href="#">GIỚI THIỆU</a></li>
+                        <li id="li_home" ><a href="javascript:void(0)"  >GIỚI THIỆU</a></li>
                     </ul>
                 </div>
 
@@ -36,11 +35,21 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active" ><a href="#">GIỚI THIỆU</a></li>
-                        <li><a href="#">LỢI ÍCH VỢT TRỘI</a></li>
-                        <li><a href="#">QUYỀN LỢI</a></li>
-                        <li><a href="#">PHÍ BÀO HIỂM</a></li>
-                        <li><a href="#">THÔNG TIN CẦN BIẾT</a></li>
+                        <li class="nav_click active" id="gioi_thieu" >
+                            <a href="javascript:void(0)" >GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav_click" id="loi_ich" >
+                            <a href="javascript:void(0)"  >LỢI ÍCH VỢT TRỘI</a>
+                        </li>
+                        <li class="nav_click" id="quyen_loi" >
+                            <a href="javascript:void(0)" >QUYỀN LỢI</a>
+                        </li>
+                        <li class="nav_click" id="bao_hiem">
+                            <a href="javascript:void(0)"   >PHÍ BÀO HIỂM</a>
+                        </li>
+                        <li class="nav_click" id="thong_tin">
+                            <a href="javascript:void(0)"   >THÔNG TIN CẦN BIẾT</a>
+                        </li>
 
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -48,7 +57,7 @@
         </nav>
         <div class="banner">
             <div class="container">
-                <div class="row">
+                <div class="" id="target_gioi_thieu">
                     <div  class=" bao-hiem col-md-5">
                         <h2 class="h-Bold">BẢO HIỂM BỆNH HIỂM NGHÈO</h2>
                         <p class="desc">Công ty đầu tiên cho ra mắt sản phẩm bệnh hiểm nghèo với 14 bệnh nan y (bao gồm cả Ung Thư Suy Thận; Liệt Các Chi; Đột Quỵ và Ngồi Máu Cơ Tim</p>
@@ -95,7 +104,7 @@
         </div>
         <!--<img class="img-banner" src="images/slider.png"  alt="#">-->
 
-        <div class="container">
+        <div class="container" id="target_loi_ich">
             <!--<img class="img-gioithieu" src="images/gioithieu-bg.png"  alt="#">-->
             <div class="row">
                 <div class="bg-tn" style="text-align:center; color: #fff; margin-top: 0px;">
@@ -143,19 +152,19 @@
                     </div>
                 </div>
             </div> 
-            <img class="img-gioithieu" src="images/t-bg.png"  alt="#">
-            <div class="sec-title has-bg">
+            <img class="img-gioithieu" src="images/t-bg.png"  alt="#" >
+            <div class="sec-title has-bg" id="target_quyen_loi">
                 <h3>Quyền lợi</h3>
             </div>
             <div class="row">
+
                 <div class="col-md-4">
                     <div class="tienich-info">
                         <img class="img-quyenloi"  src="images/img1.png" alt="">
                         <div class="overlay">
                             <div class="box-holder">
-                                <a class="box inline" href="#inline_content1" target="_blank">
+                                <a class="box inline" href="#inline_content1">
                                     <img  src="images/click.png">
-
                                 </a>
                             </div>
                         </div>
@@ -164,41 +173,43 @@
                         <a class="inline" href="#inline_content1"> CÁC BỆNH HIỂM NGHÈO ĐƯỢC BẢO HIỂM</a>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="tienich-info">
                         <img class="img-quyenloi"  src="images/img2.png" alt="">
                         <div class="overlay">
                             <div class="box-holder">
-                                <a class="box inline" href="#inline_content2" target="_blank">
+                                <a class="box inline" href="#inline_content2">
                                     <img src="images/click.png">
-
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="t-title text-center">
-                        <a class="inline" href="#inline_conten2">SỐ TIỀN BÀO HIỂM</a>
+                        <a class="inline" href="#inline_content2">SỐ TIỀN BÀO HIỂM</a>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="tienich-info">
-                        <img class="img-quyenloi" src="images/img3.png" alt="">
+                        <img class="img-quyenloi"  src="images/img3.png" alt="">
                         <div class="overlay">
                             <div class="box-holder">
-                                <a class="box inline" href="#inline_content3" target="_blank">
-                                    <img class="img-quyenloi" src="images/click.png">
-
+                                <a class="box inline" href="#inline_content3">
+                                    <img src="images/click.png">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="t-title text-center">
-                        <a class="inline" href="#inline_conten3">PHẠM VI BẢO HIỂM</a>
+                        <a class="inline" href="#inline_content3">PHẠM VI BẢO HIỂM</a>
                     </div>
                 </div>
-            </div> 
+
+            </div>
+
             <img class="img-gioithieu" src="images/t-bg.png"  alt="#">
-            <div class="sec-title has-bg">
+            <div class="sec-title has-bg" id="target_bao_hiem">
                 <h3>Phí bảo hiểm</h3>
             </div>
             <div class="info2 table_phi">
@@ -282,7 +293,7 @@
                 </div>
             </div>
             <img class="img-gioithieu" src="images/t-bg.png"  alt="#">
-            <div class="sec-title has-bg">
+            <div class="sec-title has-bg" id="target_thong_tin">
                 <h3>Thông tin cần thiết</h3>
             </div>
             <!--<img class="img-thongtin" src="images/img4.png"  alt="#">-->
@@ -300,7 +311,10 @@
                         <img src="images/img4.png" alt="Chania">
                         <div class="carousel-caption">
                             <h3>Quy tắc bảo hiểm</h3>
-                            <p>Trường hợp Người được bảo hiểm bị mắc phải bệnh hiểm nghèo thuộc phạm vi bảo hiểm của Quy tắc bảo hiểm này, Người được bảo hiểm/ Người thụ hưởng/ Người thừa kế hợp pháp phải gửi các chứng từ sau đây</p>
+                            <p><strong>Công ty bảo hiểm:</strong> là Tổng công ty
+                                Cổ phần Bảo hiểm Bưu điện và các
+                                Công ty thành viên, sau đây gọi tắt là
+                                PTI.</p>
                             <p>
                                 <a  href="https://www.epti.vn/upload/Sanpham/QuyTac-BH%20BenhHiemNgheo%20(2).pdf" target="_blank">
                                     <button type="submit" value="Register Now" class="btn submit sub-form" name="submit" style=" background: #ffc900; border-radius: 5px; width: 230px; box-shadow: 0 3px 0 #d37f00;">xem chi tiết</button>
@@ -313,7 +327,9 @@
                         <img src="images/img4.png" alt="Chania">
                         <div class="carousel-caption">
                             <h3>Giấy yêu cầu bảo hiểm</h3>
-                            <p>Trường hợp Người được bảo hiểm bị mắc phải bệnh hiểm nghèo thuộc phạm vi bảo hiểm của Quy tắc bảo hiểm này, Người được bảo hiểm/ Người thụ hưởng/ Người thừa kế hợp pháp phải gửi các chứng từ sau đây</p>
+                            <p><strong>Lịch sử tham gia bảo hiểm:</strong> trước đây, bạn đã bao giờ bị một công ty bảo hiểm từ chối, trì hoãn, hủy hợp đồng, hoặc chấp nhận bảo hiểm nhưng có
+                                điểm loại trừ riêng hoặc phí bảo hiểm phải đóng cao hơn phí tiêu chuẩn hoặc phải thay đổi quyền lợi hoặc đã tham gia chương trình bảo hiểm tương
+                                tự và được bồi thường?</p>
                             <p>
                                 <a  href="https://www.epti.vn/upload/Sanpham/Giay%20YCBH-benhhiemngheo.pdf" target="_blank">
                                     <button type="submit" value="Register Now" class="btn submit sub-form" name="submit" style=" background: #ffc900; border-radius: 5px; width: 230px; box-shadow: 0 3px 0 #d37f00;">xem chi tiết</button>
@@ -326,7 +342,11 @@
                         <img src="images/img4.png" alt="Flower">
                         <div class="carousel-caption">
                             <h3>Quyền lợi bảo hiểm</h3>
-                            <p>Trường hợp Người được bảo hiểm bị mắc phải bệnh hiểm nghèo thuộc phạm vi bảo hiểm của Quy tắc bảo hiểm này, Người được bảo hiểm/ Người thụ hưởng/ Người thừa kế hợp pháp phải gửi các chứng từ sau đây</p>
+                            <p>
+                                <strong>Lợi ích của Người được bảo hiểm khi tham gia sản phấm Bảo hiểm bệnh hiểm nghèo:</strong>
+                                <br>Cung cấp nguồn tài chính kiph thời cho quá trình điều trị
+                                <br>Đảm bảo kế hoạch tài chính cho bản thân và gia đình
+                            </p>
                             <p>
                                 <a  href="https://www.epti.vn/upload/Sanpham/QuyenLoiBaoHiem.rar">
                                     <button type="submit" value="Register Now" class="btn submit sub-form" name="submit" style=" background: #ffc900; border-radius: 5px; width: 230px; box-shadow: 0 3px 0 #d37f00;">xem chi tiết</button>
@@ -336,6 +356,7 @@
                     </div>
 
                 </div>
+
             </div>
             <div class="text-center su-menh">
                 <div class="sec-title">
@@ -364,13 +385,13 @@
                         </ul>
                     </nav>
                 </div>
-
                 <!-- This contains the hidden content for inline calls -->
                 <div style='display:none'>
                     <div id='inline_content1' style='padding:10px; background:#fff;'>
                         <h3 style="text-align:center; "><strong>Các bệnh hiểm nghèo được bảo hiểm</strong></h3>
+                        <img src="images/t-bg.png" alt="#">
                         <p>
-                            1 : Nhồi máu cơ tim lần đầu
+                            <br>1 : Nhồi máu cơ tim lần đầu
                             <br>2 : Đột quỵ
                             <br>3 : Ung thư
                             <br>4 : Suy thận
@@ -395,6 +416,7 @@
                 <div style='display:none'>
                     <div id='inline_content2' style='padding:10px; background:#fff;'>
                         <h3 style="text-align:center; "><strong>Số tiền bảo hiểm</strong></h3>
+                        <img src="images/t-bg.png" alt="#">
                         <p>
                             <br>Lựa chọn 1: 110,000,000 VND/ người/ năm
                             <br>Lựa chọn 2: 220,000,000 VND/ người/ năm
@@ -406,8 +428,10 @@
                 <div style='display:none'>
                     <div id='inline_content3' style='padding:10px; background:#fff;'>
                         <h3 style="text-align:center; "><strong>Phạm vi bảo hiểm</strong></h3>
+                        <img src="images/t-bg.png" alt="#">
+                        <br>
                         <p>
-                            Trường hợp Người được bảo hiểm mắc phải bệnh hiểm nghèo trong thời hạn bảo hiểm, PTI sẽ chi trả toàn bộ số tiền bảo hiểm được nêu cụ thể trong Hợp đồng với điều kiện sau:
+                            <br>Trường hợp Người được bảo hiểm mắc phải bệnh hiểm nghèo trong thời hạn bảo hiểm, PTI sẽ chi trả toàn bộ số tiền bảo hiểm được nêu cụ thể trong Hợp đồng với điều kiện sau:
                             <br>a. Bệnh hiểm nghèo xuất hiện lần đầu đối với Người được bảo hiểm theo chẩn đoán của bác sỹ, và
                             <br>b. Người được bảo hiểm còn sống ít nhất 30 ngày kể từ ngày kết luận của bác sỹ.
                             <br>Hợp đồng bảo hiểm sẽ kết thúc sau khi Người được bảo hiểm nhận được số tiền bồi thường và không tái tục cho những năm sau.
@@ -428,167 +452,9 @@
         <script type="text/javascript" src="js/modernizr.js"></script>
         <script type="text/javascript" src="js/custom.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
-        <!---->
-        <!--<script src="js/jquery-1.10.1.min.js"></script>-->
-        <!--<script src="js/bootstrap.min.js"></script>-->
-        <!--<script src="js/modernizr.js"></script>-->
-        <!--<script src="js/jquery.bxslider.min.js"></script>-->
-        <!--<script src="js/jquery.customSelect.js"></script>-->
-        <!--<script src="js/jquery.validate.min.js"></script>-->
         <script src="js/jquery.colorbox-min.js"></script>
-        <!--<script src="js/custom.js"></script>-->
-        <!--<script src="js/loader.js"></script>-->
         <script>
-
-            $('.subMenu').smint({
-                'scrollSpeed': 1000
-            });
-
             $(".inline").colorbox({inline:true, width:"50%"});
-
-            (function () {
-                $.fn.smint = function (options) {
-                    var settings = $.extend({
-                        'scrollSpeed': 500
-                        , 'mySelector': 'div'
-                    }, options);
-                    // adding a class to users div
-                    $(this).addClass('smint');
-                    //Set the variables needed
-                    var optionLocs = new Array()
-                            , lastScrollTop = 0
-                            , menuHeight = $(".smint").height()
-                            , smint = $('.smint')
-                            , smintA = $('.smint a')
-                            , myOffset = smint.height();
-                    if (settings.scrollSpeed) {
-                        var scrollSpeed = settings.scrollSpeed
-                    }
-                    if (settings.mySelector) {
-                        var mySelector = settings.mySelector
-                    };
-                    return smintA.each(function (index) {
-                        var id = $(this).attr('href').split('#')[1];
-                        if (!$(this).hasClass("extLink")) {
-                            $(this).attr('id', id);
-                        }
-                        //Fill the menu
-                        optionLocs.push(Array(
-                                $(mySelector + "." + id).position().top - menuHeight
-                                , $(mySelector + "." + id).height() + $(mySelector + "." + id).position().top, id));
-                        ///////////////////////////////////
-                        // get initial top offset for the menu
-                        var stickyTop = smint.offset().top;
-                        // check position and make sticky if needed
-                        var stickyMenu = function (direction) {
-                            // current distance top
-                            var scrollTop = $(window).scrollTop() + myOffset;
-                            // if we scroll more than the navigation, change its position to fixed and add class 'fxd', otherwise change it back to absolute and remove the class
-                            if (scrollTop > stickyTop + myOffset) {
-                                smint.css({
-                                    'position': 'fixed'
-                                    , 'top': 0
-                                    , 'left': 0
-                                }).addClass('fxd');
-
-                                // add padding to the body to make up for the loss in heigt when the menu goes to a fixed position.
-                                // When an item is fixed, its removed from the flow so its height doesnt impact the other items on the page
-                                $('body').css('padding-top', menuHeight);
-                            } else {
-                                smint.css('position', 'relative').removeClass('fxd');
-                                //remove the padding we added.
-                                $('body').css('padding-top', '0');
-                            }
-
-                            // Check if the position is inside then change the menu
-                            // Courtesy of Ryan Clarke (@clarkieryan)
-                            if (optionLocs[index][0] <= scrollTop && scrollTop <= optionLocs[index][1]) {
-                                if (direction == "up") {
-                                    $("#" + id).addClass("active");
-                                    $("#" + optionLocs[index + 1][2]).removeClass("active");
-                                } else if (index > 0) {
-                                    $("#" + id).addClass("active");
-                                    $("#" + optionLocs[index - 1][2]).removeClass("active");
-                                } else if (direction == undefined) {
-                                    $("#" + id).addClass("active");
-                                }
-                                $.each(optionLocs, function (i) {
-                                    if (id != optionLocs[i][2]) {
-
-                                        $("#" + optionLocs[i][2]).removeClass("active");
-                                    }
-                                });
-                            }
-                        };
-                        // run functions
-                        stickyMenu();
-                        // run function every time you scroll
-                        $(window).scroll(function () {
-                            //Get the direction of scroll
-                            var st = $(this).scrollTop() + myOffset;
-                            if (st > lastScrollTop) {
-                                direction = "down";
-                            } else if (st < lastScrollTop) {
-                                direction = "up";
-                            }
-                            lastScrollTop = st;
-                            stickyMenu(direction);
-                            // Check if at bottom of page, if so, add class to last <a> as sometimes the last div
-                            // isnt long enough to scroll to the top of the page and trigger the active state.
-
-                            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-                                smintA.removeClass('active')
-                                $(".smint a:not('.extLink'):last").addClass('active')
-
-                            } else {
-                                smintA.last().removeClass('active')
-                            }
-                        });
-                        ///////////////////////////////////////
-                        $(this).on('click', function (e) {
-                            // gets the height of the users div. This is used for off-setting the scroll so the menu doesnt overlap any content in the div they jst scrolled to
-                            var myOffset = smint.height();
-                            // stops hrefs making the page jump when clicked
-                            e.preventDefault();
-                            // get the hash of the button you just clicked
-                            var hash = $(this).attr('href').split('#')[1];
-                            var goTo = $(mySelector + '.' + hash).offset().top - myOffset;
-                            // Scroll the page to the desired position!
-                            $("html, body").stop().animate({
-                                scrollTop: goTo
-                            }, scrollSpeed);
-                            // if the link has the '.extLink' class it will be ignored
-                            // Courtesy of mcpacosy â€(@mcpacosy)
-                            if ($(this).hasClass("extLink")) {
-                                return false;
-                            }
-                        });
-                        //This lets yo use links in body text to scroll. Just add the class 'intLink' to your button and it will scroll
-                        $('.intLink').on('click', function (e) {
-                            var myOffset = smint.height();
-                            e.preventDefault();
-                            var hash = $(this).attr('href').split('#')[1];
-                            if (smint.hasClass('fxd')) {
-                                var goTo = $(mySelector + '.' + hash).position().top - myOffset;
-                            } else {
-                                var goTo = $(mySelector + '.' + hash).position().top - myOffset * 2;
-                            }
-                            $("html, body").stop().animate({
-                                scrollTop: goTo
-                            }, scrollSpeed);
-                            if ($(this).hasClass("extLink")) {
-                                return false;
-                            }
-                        });
-                    });
-                };
-                $.fn.smint.defaults = {
-                    'scrollSpeed': 500
-                    , 'mySelector': 'div'
-                };
-            })(jQuery);
-
-
         </script>
     </body>
 

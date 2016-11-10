@@ -20,7 +20,6 @@ function resizeScreen() {
         $('.text-bao-hiem').css({"width": "70%"});
         $('.table_phi').css({"padding-left": "55px", "padding-right": "55px"});
         $('.su-menh').css({
-            "margin-bottom": "200px",
             "margin-top": "0",
             "padding-left": "265px",
             "padding-right": "265px",
@@ -28,10 +27,27 @@ function resizeScreen() {
         });
     }
 
+
 }
 
 resizeScreen();
 $(window).resize(function () {
 
     resizeScreen();
+});
+
+$(".nav_click").click(function () {
+    var id_target = "#target_" + $(this).attr("id");
+    /*lấy vị trí chuyển đến*/
+    var height = $(id_target).offset().top - $(".nav-custom").height() - 10;
+    /*Di chuyển đến nơi chọn*/
+    $(window).scrollTop(height);
+    /*Đổi class thành kích hoạt*/
+    var id_older = $(".active").attr("id");
+    $("#" + id_older).removeClass("active");
+    $(this).addClass("active");
+
+    /*Gán link home */
+    var htmlstring = $(this).html();
+    $("#li_home").replaceWith("<li id=\"li_home\" >" + htmlstring + "</li>");
 });
